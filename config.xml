@@ -8,6 +8,13 @@
         Gameplays, diversão e prêmios para vocês!   
     </author>
     <content src="index.html" />
+
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="7000" />
+
+
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" /> 
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" /> 
@@ -17,6 +24,13 @@
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" /> 
     <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" /> 
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+    <preference name="show-splash-screen-spinner" value="true" />
+      <preference name="splash-screen-duration" value="3000" />
+      <preference name="auto-hide-splash-screen" value="true" />
+      <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+      </feature>
+
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" /> 
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 
